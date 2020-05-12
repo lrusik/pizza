@@ -1,0 +1,47 @@
+//@import "../fonts/stylesheet.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "../node_modules/slick-carousel/slick/slick.scss";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+@import "lib/pre.scss";
+@import "lib/variables.scss";
+
+body {
+	font-family: $paragraph;
+	background-color: $bright;
+}
+
+
+
+@import "sidemenu/sidemenu.scss";
+@import "content/content.scss";
+@import "product-quickview/product-quickview.scss";
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.content {
+    padding-left: $sidemenu-size;
+    overflow: hidden;
+}
+
+.cont {
+	display: flex;
+}
+
+.column {
+	display: flex;
+}
+
+.item {
+
+}
+
+.item4 {
+
+}
+
+@import "resp/resp.scss";
+

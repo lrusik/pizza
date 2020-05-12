@@ -1,0 +1,268 @@
+$border-color: rgba($bright, .3);
+.product-quickview {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 0;
+
+	opacity: 1;
+	z-index: 2000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: auto;
+	visibility: visible;
+	
+	transition: background .2s;
+	background-color: rgba($font, .4s);
+	
+	&_hide {
+		background-color: rgba($font, 0);
+		visibility: hidden;
+		user-select: none;
+		opacity: 0;
+		
+		.product-quickview__overlay {
+			transform: translateY(-5%) rotateX(10deg);
+		}
+	}
+
+	.container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* .product-quickview__overlay */
+	&__overlay {
+		position: relative;
+		width: 80%;
+		height: 80%;
+
+		transition: transform .3s;
+		transform: translateY(0) rotateX(0);
+		&:before,
+		&:after {
+			background-color: $border-color;
+			position: absolute;
+			display: block;
+			content: "";
+			width: calc(100% + 20px);
+			height: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&:before {
+			top: -10px;
+		} 
+		&:after {
+			bottom: -10px;
+		}
+	}
+
+	/* .product-quickview__inner */
+	&__inner {
+		padding: 50px;
+		background-color: $bright;
+		
+
+		width: 100%;
+		height: 100%;
+		&:before,
+		&:after {
+			background-color: $border-color;
+			position: absolute;
+			display: block;
+			content: "";
+			height: 100%;
+			width: 10px;
+			top: 0;
+		}
+
+		&:before {
+			right: -10px;
+		} 
+		&:after {
+			left: -10px;
+		}
+	}
+	
+	/* .product-quickview__item */
+	&__item {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	/* .product-quickview__image */
+	&__image {
+		background-color: $gray;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	/* .product-quickview__pizzapicture */
+	&__pizzapicture {
+	}
+	/* .product-quickview__content */
+	&__content {
+		padding: 0 0 0 30px;
+	}
+	/* .product-quickview__title */
+	&__title {
+		margin-bottom: 10px;
+	}
+	/* .product-quickview__price */
+	&__price {
+		font-size: 18px;
+		color: $color;
+	}
+	/* .product-quickview__text */
+	&__text {
+		margin-bottom: 40px;
+	}
+	/* .product-quickview__nutrion */
+	&__nutrion {
+		color: $color-second;
+		font-size: 15px;
+	}
+	/* .product-quickview__nutrs */
+	&__nutrs {
+		max-width: 80%;
+		margin-bottom: 30px;
+	}
+	/* .product-quickview__cal */
+	&__cal {
+	}
+	/* .product-quickview__opt */
+	&__opt {
+		display: flex;
+		position: relative;
+		align-items: center;
+		overflow: hidden;
+		width: 100%;
+	}
+	/* .product-quickview__optname */
+	&__optname {
+		transform: translateY(-5px);
+		padding-right: 10px;
+		background-color: $bright;
+		z-index: 5;
+	}
+	/* .product-quickview__optdots */
+	&__optdots {
+		font-weight: 600;
+		color: $color-second;
+		position: absolute;
+		z-index: 1;
+	}
+	/* .product-quickview__optgramms */
+	&__optgramms {
+		font-size: 14px;
+		color: $color;
+		white-space: nowrap;
+		padding-left: 10px;
+		background-color: $bright;
+		position: absolute;
+		right: 0;
+		z-index: 5;
+	}
+	/* .product-quickview__carbon */
+	&__carbon {
+	}
+	/* .product-quickview__squ */
+	&__squ {
+	}
+	/* .product-quickview__fat */
+	&__fat {
+	}
+	/* .product-quickview__butttons */
+	&__butttons {
+		display: flex;
+	}
+	/* .product-quickview__counter */
+	&__counter {
+		margin-right: 20px;
+	}
+	/* .product-quickview__button */
+	&__button {
+	}
+
+	&__close {
+
+	}
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	/* .close__angle */
+	&__angle {
+		width: 0;
+		height: 0;
+		border-top: 85px solid transparent; 
+		border-bottom: 85px solid transparent; 
+
+		border-left: 85px solid $color-second;
+		transform: translate(14px, -56px) rotate(-45deg);
+	}
+	/* .close__simbol */
+	&__area {
+		position: absolute;
+		display: block;
+		content: "";
+		width: 70px;
+		height: 70px;
+		z-index: 3;
+		right: 0;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	&__hitbox {
+		position: relative;
+		display: block;
+		content: "";
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+	}	
+
+	&__simbol {
+		&:before, 
+		&:after {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			background-color: $bright;
+			height: 70%;
+			width: 2px;
+		}
+
+		&:before {
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+
+		&:after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+	}
+
+}
+
