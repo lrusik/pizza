@@ -1,0 +1,338 @@
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.content {
+   //padding-left: $sidemenu-size;
+   overflow: hidden;
+}
+
+.cont {
+	display: flex;
+}
+
+.column {
+	display: flex;
+}
+
+.item {
+
+}
+
+@media screen and (max-width: 1350px) {
+	.side-menu {
+		transform: translateX(-100%);
+	}
+
+	.content {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 1150px){
+	.finfo {
+		flex-direction: column-reverse;
+		&__smallcont {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+		&__bigcont {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.subscribe {
+		&__inner {
+			display: block;
+		}	
+
+		&__big {
+        display: flex;
+        .subscribe__item {
+        	width: 50%;
+        }
+    	}
+
+    	&__little {
+ 			margin-bottom: 20px;
+    	}
+		&__item {
+			width: auto;
+		}
+
+		&__input {
+			margin: 0 30px 0 0px;
+      }
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+	.footer {
+		
+	}
+
+	.footer {
+    	min-height: auto;
+     	height: auto;
+    	.container {
+        min-height: auto;
+        position: relative;
+        padding-bottom: 70px;
+    	}
+   }
+	.main__slise {
+		position: absolute;
+		z-index: 0;
+	}
+
+	.main__fade {
+		z-index: 1;
+	}
+	
+	.main__slise .main__image {
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, .6);
+	}
+
+	.finfo {
+		flex-direction: row;
+		&__smallcont {
+			width: 30%;
+		}
+
+		&__bigcont {
+			width: 70%;
+		}
+	}
+
+	.specials__item:last-child {
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu__item {
+		margin-bottom: 30px;
+	}
+
+	.cont {
+		flex-direction: column;
+	}	
+
+	.item {
+		width: 100%;
+	}
+
+   .dishes__column:first-child { 
+   	padding-right: 0; 
+   }
+
+   .menu__buttons {
+   	opacity: 1;	
+   }	
+
+   .footer__image {
+   	display: none;
+   }
+
+   .column {
+		width: 100%;
+	}
+
+	.footer__item {
+		width: 100%;
+	}
+
+	.review__pitem {
+		display: block;
+		text-align: center;
+	}
+	
+	.review {
+		padding-bottom: 80px;
+		.slick-dots {
+			width: 100%;	
+			display: flex;
+			justify-content: center;
+			left: 50%;
+			transform: translate(-50%, 50%);
+		}
+	}
+	
+	.review__content {
+		margin: 0 auto;
+	}
+
+	.review__icon {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+   .total {
+   	&__input {
+        	&:last-child {
+        		margin-top: 10px;
+            margin-left: 0;
+        	}
+      }
+   }
+}
+
+@media screen and (max-width: 650px) {
+	.finfo {
+		flex-direction: column-reverse;
+		&__smallcont {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+		&__bigcont {
+			width: 100%;
+		}
+	}
+
+	.nonemd {
+		display: none !important;
+	}
+
+	.card {
+		&__prekreuz {
+			width: 40px;
+			height: 40px;
+		}
+		&__kreuz {
+			width: 35px;
+			height: 35px;
+
+			&:before,
+	     	&:after {
+	         position: absolute;
+	         background-color: $font-slim;
+	         width: 1px;
+	         height: 20px;
+	         left: 50%;
+	         top: 50%;
+	         display: block;
+	         content: "";
+
+	     	}
+		}
+
+		table th .header {
+			font-size: 12px;
+		}
+
+		&__prekreuz {
+        position: absolute;
+        left: 25px;
+      }
+      &__product {
+			margin-left: 35px;
+		}
+		&__thproduct {
+			width: 45%;
+		}
+		&__thproduct span {
+			margin-left: 35px;
+		}
+		
+		&__thquantity span {
+			margin: 0 10px;
+		}
+
+		&__thsubtotal span {
+		}
+
+		.counter__inner {
+			width: 60px;
+			margin: 0 auto;
+		}
+	}
+
+	.subscribe {
+		&__big {
+			flex-direction: column;
+		}
+
+		&__item {
+			width: 100%;
+		}
+
+		&__big {
+        .subscribe__item {
+        		display: block; 	
+        		padding-top: 10px;
+        		padding-bottom: 10px;
+        		width: 100%;
+        }
+    	}
+    	&__button {
+    		display: block;
+    		
+    		margin-top: 10px !important;
+			padding: 0;
+    		height: 54px;
+    	}    	
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.main {
+		&__sign {
+			padding: 20px;
+		}
+	}
+
+	.card {
+		&__thproduct {
+			padding-right: 5px;
+		}
+
+		&__thproduct span {
+			margin-left: 15px;
+			
+		}
+
+		&__thprice span {
+		}
+
+		&__preprice {
+			margin-left: 25px;
+		}
+
+		&__thsubtotal {
+			width: 10%;
+		}
+
+	}
+
+
+	.column {
+		flex-direction: column;
+	}
+
+	.pending__load {
+		margin-top: 20px;
+	}
+
+	.finfo {
+		&__bigcont {
+			flex-direction: column-reverse;
+
+			 .finfo__item:last-child {
+			 	margin-bottom: 30px;
+			 }
+		}
+	}
+}
+

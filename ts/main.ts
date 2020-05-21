@@ -1,6 +1,14 @@
 //=include ../node_modules/slick-carousel/slick/slick.js
+//=include ../node_modules/smoothscroll/smoothscroll.js
+
 //=include lib/lib.ts
 //=include menu.ts
+
+function clickOnIt(query) {
+	const buttons = document.querySelectorAll(query);
+	for(let i=0; i < buttons.length; i++)
+		buttons[i].click();
+}
 
 function buttonLoadingAndCheck(event) {
 	const min = parseInt(event.currentTarget.getAttribute('data-min-dur'), 10);
@@ -18,8 +26,6 @@ function buttonLoadingAndCheck(event) {
 		}, 2000);	
 
 	}, Math.floor(Math.random() * max) + min);
-
-
 }
 
 function buttonLoading(event) {
@@ -57,19 +63,22 @@ function newCardItem(id, name, price, picture, quantity, subtotal) {
 	item.setAttribute('data-id', id);
 
 	item.innerHTML = `
-		<td class="card__prekreuz">
-			<div class="card__kreuz" onclick="removeTab(event)"><div></div></div>
+
+		<td class="card__preprekreuz">
+			<div class="card__prekreuz">
+				<div class="card__kreuz" onclick="removeTab(event)"><div></div></div>
+			</div>
 		</td>
 		<td>
 			<div class="card__product">
-				<div class="card__image">
+				<div class="card__image nonemd">
 					<img src="` + picture + `" alt="" class="card__picture"> 
 				</div>
 				<div class="card__name">` + name + `</div>
 
 			</div>
 		</td>
-		<td>
+		<td class="card__preprice">
 			<div class="card__price">$<span class="card__amount">` + price + `</span></div>
 		</td>
 		<td>
@@ -182,6 +191,7 @@ function showPending(event) {
 			$(".pending").css("opacity", "1");
 			$(".total").css("opacity", "0");
 			removeItemsFromCard();
+			document.querySelector(".card .container").style.display = "none";
 			localStorage.setItem('pen', '1');
 		}, Math.floor(Math.random() * max) + min);
 		return 0;
@@ -192,34 +202,20 @@ function showPending(event) {
 	error.style.opacity = 1;
 }
 
-function mainNext() {
-	const buttons = document.querySelectorAll(".main .slick-next");
-	for(let i=0; i < buttons.length; i++)
-		buttons[i].click();
-}
-
-function mainPrev() {
-	const buttons = document.querySelectorAll(".main .slick-prev");
-	for(let i=0; i < buttons.length; i++)
-		buttons[i].click();
-}
-
 function setCarousels() {
 	$('.review__inner').slick({
 		dots: true,
-	    infinite: true,
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-		prevArrow: $('.review .review__switch-left'),
-		nextArrow: $('.review .review__switch-right')
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
 	});
 	
 	$('.main__slise').slick({
 		dots: false,
-	    infinite: true,
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    draggable: false,
+	   infinite: true,
+	   slidesToShow: 1,
+	   slidesToScroll: 1,
+	   draggable: false,
 		swipe: false,
 		swipeToSlide: false,
 		touchMove: false,
@@ -229,16 +225,17 @@ function setCarousels() {
 
 	$('.main__fade').slick({
 		dots: false,
-	    infinite: true,
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    draggable: false,
+	   infinite: true,
+	   slidesToShow: 1,
+	   slidesToScroll: 1,
+	   draggable: false,
 		swipe: false,
 		swipeToSlide: false,
 		touchMove: false,
 		draggable: false,
+
 		fade: true,
-		speed: 500,
+		speed: 700,
 		cssEase: 'ease-out'
 	});
 
@@ -300,21 +297,21 @@ function calculateSubtotal(event) {
 	calculateTotal();
 }
 
-function smoothScroll(id) {
-	document.getElementById(id).scrollIntoView({
-  		behavior: 'smooth'
-	});
+function smoothScrollId(id) {
+	smoothScroll(id, 500, () => {
+   	
+   });
 }
+
 
 function setLinkHandlers() {
 	const links = document.querySelectorAll(".scroll");
 	for(let i=0; i < links.length; i++){
 		links[i].addEventListener('click', (event) => {
-			smoothScroll(event.target.getAttribute('data-scroll-to'));
+			smoothScrollId(event.target.getAttribute('data-scroll-to'));
 		});
 	}
 }
-
 
 
 $(document).ready(function(){
@@ -329,6 +326,7 @@ $(document).ready(function(){
 
 	const num = localStorage.getItem('pen');
 	if(num !== null && num !== "null"){
+		document.querySelector(".card .container").style.display = "none";
 		$(".pending").css("z-index", "3");
 		$(".pending").css("opacity", "1");
 		$(".total").css("opacity", "0");

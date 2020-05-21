@@ -1,9 +1,13 @@
 //@import "../fonts/stylesheet.css";
 @import "../node_modules/slick-carousel/slick/slick-theme.scss";
 @import "../node_modules/slick-carousel/slick/slick.scss";
-@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
 @import "lib/pre.scss";
 @import "lib/variables.scss";
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: $paragraph;
@@ -39,9 +43,6 @@ body {
 
 }
 
-.item4 {
-
-}
 
 @import "resp/resp.scss";
 

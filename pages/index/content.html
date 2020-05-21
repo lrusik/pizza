@@ -4,61 +4,65 @@
 			<div class="main__slide ">
 				<div class="main__item">
 					<div class="main__sign header">
-						the true taste of naples
+						<img src="img/true.png" alt="">
 					</div>
-					<div onclick="order(event)" class="main__order button scroll" data-scroll-to="menu">Order online</div>
+					<div class="main__order button scroll" data-scroll-to="menu">Order online</div>
 				</div>
 			</div>
 			<div class="main__slide ">
 				<div class="main__item">
 					<div class="main__sign header">
-						the true taste of naples
+						<img src="img/true.png" alt="">
 					</div>
-					<div onclick="order(event)" class="main__order button scroll" data-scroll-to="menu">Order online</div>
+					<div class="main__order button scroll" data-scroll-to="menu">Order online</div>
 				</div>
 			</div>	
 			<div class="main__slide ">
 				<div class="main__item">
 					<div class="main__sign header">
-						the true taste of naples
+						<img src="img/true.png" alt="">
 					</div>
-					<div onclick="order(event)" class="main__order button scroll" data-scroll-to="menu">Order online</div>
+					<div class="main__order button scroll" data-scroll-to="menu">Order online</div>
 				</div>
 			</div>	
 			<div class="main__slide ">
 				<div class="main__item">
 					<div class="main__sign header">
-						the true taste of naples
+						<img src="img/true.png" alt="">
 					</div>
-					<div onclick="order(event)" class="main__order button scroll" data-scroll-to="menu">Order online</div>
+					<div class="main__order button scroll" data-scroll-to="menu">Order online</div>
 				</div>
 			</div>		
 		</div>
 		<div class="main__slider main__slise item">
 			<div class="main__slide" style="background: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-img-1a.jpg) no-repeat center center / cover;">
+				<div class="main__image"></div>
 			</div>	
 			<div class="main__slide" style="background: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-img-1a.jpg) no-repeat center center / cover;">
+				<div class="main__image" ></div>
 			</div>	
-			<div class="main__slide" style="background: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-img-1a.jpg) no-repeat center center / cover;">
+			<div class="main__slide"style="background: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-img-1a.jpg) no-repeat center center / cover;" >
+				<div class="main__image"></div>
 			</div>	
-			<div class="main__slide" style="background: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-img-1a.jpg) no-repeat center center / cover;">
+			<div class="main__slide" style="background: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-img-1a.jpg) no-repeat center center / cover;"  >
+				<div class="main__image" ></div>
 			</div>	
 		</div>
 
 	</div>
-	<div class="review__switch review__switch-left" onclick="mainPrev()"> 
+	<div class="main__switch main__switch-left" onclick="clickOnIt('.main .slick-next')"> 
 		<div class="prev header"> 
 			<span>Prev</span> 
 		</div> 
 	</div>
-	<div class="review__switch review__switch-right" onclick="mainNext()"> 
+	<div class="main__switch main__switch-right" onclick="clickOnIt('.main .slick-prev')"> 
 		<div class="next header"> 
 			<span>next</span> 
 		</div> 
 	</div>
 </div>
 
-<section class="dishes" id="dishes">
+<section class="dishes gray" id="dishes">
 	<div class="container">
 		<div class="title">
 			<div class="little-header">
@@ -225,111 +229,17 @@
 	</div>
 </section>
 
-<div class="specials gray" id="specials">
-	<div class="specials__inner cont">
-		<div class="specials__item item" id="specialsbg">
-			<div class="overlay allcenter">
-				<div class="specials__logo" id="specialslogo">
-					
-				</div>
-			</div>
-		</div>
-		<div class="specials__item item specials__banner banner">
-			<div class="banner__title header">specials*</div>
-			<div class="banner__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,</div>
-			<div class="banner__row">
-				<div class="banner__item">
-					<div class="banner__price header subheader price">$10</div>
-				</div>
-				<div class="banner__item">
-					<div class="banner__title header subheader">combo piccolo </div>
-					<div class="banner__desc slim-text">Lorem ipsum dolor sit amet, consectetur adipiscing. Praesent ut aliquam dui.</div>
-				</div>
-			</div>
-			<div class="banner__row">
-				<div class="banner__item">
-					<div class="banner__price header subheader price">$20</div>
-				</div>
-				<div class="banner__item">
-					<div class="banner__title header subheader">combo piccolo </div>
-					<div class="banner__desc slim-text">Lorem ipsum dolor sit amet, consectetur adipiscing. Praesent ut aliquam dui.</div>
-				</div>
-			</div>
-			<div class="banner__row">
-				<div class="banner__item">
-					<div class="banner__price header subheader price">$30</div>
-				</div>
-				<div class="banner__item">
-					<div class="banner__title header subheader">combo piccolo </div>
-					<div class="banner__desc slim-text">Lorem ipsum dolor sit amet, consectetur adipiscing. Praesent ut aliquam dui.</div>
-				</div>
-			</div>
-		</div>	
-	</div>
-</div>
-
 <div class="subscribe" id="subscribe">
 	<div class="container">
 		<div class="subscribe__inner">
-			<div class="subscribe__item subscribe__text header subheader">Stay up to date</div>
-			<input type="email" class="subscribe__item subscribe__input" placeholder="Your Email">
-			<div class="subscribe__item subscribe__button button"> <span >Sign up for newsletter</span></div>
-		</div>
-	</div>
-</div>
-
-<div class="review" id="review">
-	<div>
-		<div class="container relative">
-			<div class="review__inner">
-				
-				<div class="review__item">
-					<div class="review__pitem">
-					<div class="review__icon">
-						<img src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h1-testimonials-img-2.png" alt="">
-					</div>	
-					<div class="review__content">
-						<div class="header subheader">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”</div>
-						<div class="little-header">Washington Post 2018</div>
-					</div>		
-					</div>
-				</div>
-
-				<div class="review__item">
-					<div class="review__pitem">
-					<div class="review__icon">
-						<img src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h1-testimonials-img-2.png" alt="">
-					</div>	
-					<div class="review__content">
-						<div class="header subheader">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”</div>
-						<div class="little-header">Washington Post 2018</div>
-					</div>		
-					</div>
-				</div>
-
-				<div class="review__item">
-					<div class="review__pitem">
-						<div class="review__icon">
-							<img src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h1-testimonials-img-2.png" alt="">
-						</div>	
-						<div class="review__content">
-							<div class="header subheader">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”</div>
-							<div class="little-header">Washington Post 2018</div>
-						</div>
-					</div>		
-				</div>
+			<div class="subscribe__little">
+				<div class="subscribe__item subscribe__text header subheader">Stay up to date</div>
+			</div>
+			<div class="subscribe__big">
+				<input type="email" class="subscribe__item subscribe__input" placeholder="Your Email">
+				<div class="subscribe__item subscribe__button button"> <span >Sign up for newsletter</span></div>
 			</div>
 		</div>
-	</div>
-	<div class="review__switch review__switch-left"> 
-		<div class="prev header"> 
-			<span>Prev</span> 
-		</div> 
-	</div>
-	<div class="review__switch review__switch-right"> 
-		<div class="next header"> 
-			<span>next</span> 
-		</div> 
 	</div>
 </div>
 
@@ -351,85 +261,20 @@
 	</div>
 </section>
 
-<section class="card" id="card">
+<div class="card" id="card">
 	<div class="container">
 		<div class="header">card</div>
 		<div class="card__list">
 			<table>
 				<tr >
 					<th></th>
-					<th class="header subheader left">PRODUCT</th>
-					<th class="header subheader left">PRICE</th> 
-					<th class="header subheader left">QUANTITY</th>
-					<th class="header subheader left">SUBTOTAL</th>
+					<th class="card__thproduct header subheader left"> <span>PRODUCT</span> </th>
+					<th class="card__thprice header subheader left"> <span>PRICE</span> </th> 
+					<th class="card__thquantity header subheader left"> <span>QUANTITY</span></th>
+					<th class="card__thsubtotal header subheader left"> <span>SUBTOTAL </span></th>
 				</tr>
 				<div id="card-table">	
-					<tr>
-						<td class="card__prekreuz">
-							<div class="card__kreuz" onclick="removeTab(event)"><div></div></div>
-						</td>
-						<td>
-							<div class="card__product">
-								<div class="card__image">
-									<img src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-product-img-1a.png" alt="" class="card__picture"> 
-								</div>
-								<div class="card__name"> Smith</div>
-
-							</div>
-						</td>
-						<td>
-							<div class="card__price">$<span class="card__amount">50</span></div>
-						</td>
-						<td>
-							<div class="card__counter counter">
-								<div class="counter__inner">
-									<div class="counter__number"> <span onchange="cs()">2</span> </div>
-									<div class="counter__buttons">
-										<div class="counter__up">
-											<div></div>
-										</div>
-										<div class="counter__down">
-											<div></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</td>
-						<td class="card__subtotal">$<span>0</span></td>
-					</tr>
-					<tr>
-						<td class="card__prekreuz">
-							<div class="card__kreuz" onclick="removeTab(event)"><div></div></div>
-						</td>
-						<td>
-							<div class="card__product">
-								<div class="card__image">
-									<img src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-product-img-1a.png" alt="" class="card__picture"> 
-								</div>
-								<div class="card__name"> Smith</div>
-
-							</div>
-						</td>
-						<td>
-							<div class="card__price">$<span class="card__amount">50</span></div>
-						</td>
-						<td>
-							<div class="card__counter counter">
-								<div class="counter__inner">
-									<div class="counter__number"> <span onchange="cs()">2</span> </div>
-									<div class="counter__buttons">
-										<div class="counter__up">
-											<div></div>
-										</div>
-										<div class="counter__down">
-											<div></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</td>
-						<td class="card__subtotal">$<span>0</span></td>
-					</tr>
+					
 				</div>
 			</table>
 		</div>
@@ -457,7 +302,7 @@
 			<div class="fullabsolute pending">
 				<div class="container">
 					<div class="pending__inner">
-						<div class="pending__message header subheader">
+						<div class="pending__message header subheader column">
 							<span>Your order is pending</span>
 							<div class="pending__load load">
 								<img src="img/pizza.svg" alt="" class="load__img" id="load_pizza_1">
@@ -471,4 +316,169 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
+
+<div class="specials gray" id="specials">
+	<div class="specials__inner cont">
+		<div class="specials__item item" id="specialsbg">
+			<div class="overlay allcenter">
+				<div class="specials__logo" id="specialslogo">
+					
+				</div>
+			</div>
+		</div>
+		<div class="specials__item item">
+			<div class="specials__banner banner">
+				<div class="banner__title header">specials*</div>
+				<div class="banner__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,</div>
+				<div class="banner__row">
+					<div class="banner__item">
+						<div class="banner__price header subheader price">$10</div>
+					</div>
+					<div class="banner__item">
+						<div class="banner__title header subheader">combo piccolo </div>
+						<div class="banner__desc slim-text">Lorem ipsum dolor sit amet, consectetur adipiscing. Praesent ut aliquam dui.</div>
+					</div>
+				</div>
+				<div class="banner__row">
+					<div class="banner__item">
+						<div class="banner__price header subheader price">$20</div>
+					</div>
+					<div class="banner__item">
+						<div class="banner__title header subheader">combo piccolo </div>
+						<div class="banner__desc slim-text">Lorem ipsum dolor sit amet, consectetur adipiscing. Praesent ut aliquam dui.</div>
+					</div>
+				</div>
+				<div class="banner__row">
+					<div class="banner__item">
+						<div class="banner__price header subheader price">$30</div>
+					</div>
+					<div class="banner__item">
+						<div class="banner__title header subheader">combo piccolo </div>
+						<div class="banner__desc slim-text">Lorem ipsum dolor sit amet, consectetur adipiscing. Praesent ut aliquam dui.</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="review" id="review">
+	<div class="container">
+		<div class="review__inner">
+			<div class="review__item">
+				<div class="review__pitem">
+				<div class="review__icon">
+					<img src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h1-testimonials-img-2.png" alt="">
+				</div>	
+				<div class="review__content">
+					<div class="header subheader">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”</div>
+					<div class="little-header">Washington Post 2018</div>
+				</div>		
+				</div>
+			</div>
+
+			<div class="review__item">
+				<div class="review__pitem">
+				<div class="review__icon">
+					<img src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h1-testimonials-img-2.png" alt="">
+				</div>	
+				<div class="review__content">
+					<div class="header subheader">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”</div>
+					<div class="little-header">Washington Post 2018</div>
+				</div>		
+				</div>
+			</div>
+
+			<div class="review__item">
+				<div class="review__pitem">
+					<div class="review__icon">
+						<img src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h1-testimonials-img-2.png" alt="">
+					</div>	
+					<div class="review__content">
+						<div class="header subheader">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”</div>
+						<div class="little-header">Washington Post 2018</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	<div class="review__switch review__switch-left" onclick="clickOnIt('.review .slick-prev')"> 
+		<div class="prev header"> 
+			<span>Prev</span> 
+		</div> 
+	</div>
+	<div class="review__switch review__switch-right" onclick="clickOnIt('.review .slick-next')"> 
+		<div class="next header"> 
+			<span>next</span> 
+		</div> 
+	</div>
+</div>
+
+<div class="footer">
+	<div class="footer__inner container cont">
+		<div class="footer__copyright">Created by <a href="wizbo.club">wizbo</a></div>
+			<div class="footer__item">
+			<div class="footer__info finfo">
+				<div class="finfo__bigcont">
+					<div class="finfo__item">
+						<div class="finfo__header header">working hours</div>
+						<div class="finfo__row">
+							<div class="finfo__subheader header">Monday</div>
+							<div class="finfo__line finfo__closed">Kitchen Closed</div>
+						</div>
+						<div class="finfo__row">
+							<div class="finfo__subheader header">Tuseday until Friday</div>
+							<div class="finfo__line">9:00 – 22:00</div>
+						</div>
+						<div class="finfo__row">
+							<div class="finfo__subheader header">Saturday <span style="color: #d2401e; font-size: 20px;">*</span></div>
+							<div class="finfo__line">Saturday 11am to midnight</div>
+							<div class="finfo__line">Sunday</div>
+						</div>
+						<div class="finfo__row">
+							<div class="finfo__subheader header">Sunday</div>
+							<div class="finfo__line">9:00 – 22:00</div>
+						</div>
+						
+						<div class="finfo__mtrow">
+							<div class="finfo__subheader dib header">Follow us:</div>
+							<div class="finfo__soc soc">
+								<a href="#" class="soc__item" id="facebook-f-brands">
+									<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+								</a>
+								<a href="#" class="soc__item" id="twitter-brands">
+									<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+								</a>
+								
+								<a href="#" class="soc__item" id="instagram-brands">
+									<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+								</a>
+								<a href="#" class="soc__item" id="linkedin-in-brands">
+									<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="finfo__item">
+						<div class="finfo__header header">Find Our Restaurants</div>
+						<div class="finfo__row">
+							<div class="finfo__line">1614 E. Bell Rd #104.</div>
+							<div class="finfo__line">Salerno, AZ 85022</div>
+							<div class="finfo__line">(602) 867-1010</div>
+						</div>
+					</div>
+				</div>
+				<div class="finfo__smallcont">
+					<div class="finfo__item">
+						<div class="finfo__quote header">The Don Peppe crew first and foremost values an authentic, well baked slice of pizza.</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="footer__item footer__void"></div>
+	</div>
+	<div class="footer__image"></div>
+</div>

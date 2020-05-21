@@ -1,6 +1,6 @@
 const pizzas = [
 	{	
-		name: "Here 1",
+		name: "New York‑style pizza",
 		price: 10,
 		picture: 'https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-product-img-1a.png',
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu purus, ",
@@ -85,15 +85,15 @@ function createMenu() {
 
 				let newItem = document.createElement('div');
 				newItem.classList.add('menu__item');
-				newItem.classList.add('item4');
+				newItem.classList.add('item');
 				newItem.setAttribute('data-id', i*4 + j + z);
 				newItem.innerHTML = `
 					<img class="menu__icon" src="` + pizzas[i*4 + j + z].picture + `" alt="">
 					<div class="menu__title dish">` + pizzas[i*4 + j + z].name + `</div>
 					<div class="menu__price header subheader price">$` + pizzas[i*4 + j + z].price + `</div>
-					<div class="menu__buttons">
-						<div class="menu__button button" onclick="addToCard(event)" data-min-dur="100" data-max-dur="700" value="` + (i*4 + j + z) + `">Add to card <span><span></span></span></div>
-						<div class="menu__button button" onclick="quickView(event)" value="` + (i*4 + j + z) + `">Quick view</div>
+					<div class="menu__buttons cont">
+						<div class="menu__button button item" onclick="addToCard(event)" data-min-dur="100" data-max-dur="700" value="` + (i*4 + j + z) + `">Add to card <span><span></span></span></div>
+						<div class="menu__button button item" onclick="quickView(event)" value="` + (i*4 + j + z) + `">Quick view</div>
 					</div>
 				`;
 

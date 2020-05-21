@@ -4,16 +4,22 @@
 	left: 0;
 	top: 0;
 	height: 100vh;
-	
 	border-right: 1px solid #cfcfcf;
-	background-color: #efefef;
-	
 	z-index: 1000;
+	background-color: $bright;
+
 	/* .side-menu__logo */
 	&__logo {
 		width: 100%;
 		text-align: center;
 		transform: translateY(100%);
+		position: absolute;
+		left: 50%;
+		top: 30px;
+		font-size: 28px;
+		font-weight: 900;
+		color: $color;
+		transform: translateX(-50%);
 	}
 	/* .side-menu__inner */
 	&__inner {
