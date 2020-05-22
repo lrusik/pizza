@@ -1,4 +1,37 @@
-<div class="main" id="main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pizzeria</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script defer src="js/main.js"></script>
+
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	
+</head>
+<body>
+
+<div class="side-menu">
+	<a href="" class="side-menu__logo header">
+		pizza logo
+	</a>
+	<div class="side-menu__inner allcenter">
+		<div class="side-menu__item scroll" data-scroll-to="main">Home page</div>
+		<div class="side-menu__item scroll" data-scroll-to="dishes">Favorite menu</div>
+		<div class="side-menu__item scroll" data-scroll-to="menu">Menu</div>
+		<div class="side-menu__item scroll" data-scroll-to="card">Card</div>
+		<div class="side-menu__item scroll" data-scroll-to="specials">Out specials</div>
+		<div class="side-menu__item scroll" data-scroll-to="review">Reviews</div>
+		<div class="side-menu__item scroll" data-scroll-to="footer">Contact Us</div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="main" id="main">
 	<div class="main__inner cont">
 		<div class="main__slider main__fade item">
 			<div class="main__slide ">
@@ -481,4 +514,79 @@
 		<div class="footer__item footer__void"></div>
 	</div>
 	<div class="footer__image"></div>
+</div>		
 </div>
+
+<div class="product-quickview product-quickview_hide">
+	<div class="container">
+		<div class="product-quickview__overlay">
+			<div class="product-quickview__inner cont">
+				<div class="product-quickview__item  item">
+					<div class="product-quickview__image">
+						<img src="" alt="" class="product-quickview__pizzapicture">
+					</div>
+				</div>
+				<div class="product-quickview__item item">
+					<div class="product-quickview__content">
+						<div class="product-quickview__title header subheader">Pizza</div>
+						<div class="product-quickview__price header">$<span>20</span></div>
+						<div class="product-quickview__text slim-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu purus, rhoncus fringilla vestibulum vel, dignissim vel ante. Nulla facilisi. Nullam a urna sit amet tellus pellentesque egestas in in ante.</div>
+
+						<div class="product-quickview__nutrion header">NUTRITIONAL VALUE PER 100 G:</div>
+						<div class="product-quickview__nutrs">
+							<div class="product-quickview__cal product-quickview__opt">
+								<div class="product-quickview__optname slim-text">Calories</div>
+								<div class="product-quickview__optdots">..........................................................................................................................</div>
+								<div class="product-quickview__optgramms header"><span></span> kcal </div>
+							</div>
+							<div class="product-quickview__carbon product-quickview__opt">
+								<div class="product-quickview__optname slim-text">Carbohydrates</div>
+								<div class="product-quickview__optdots">..........................................................................................................................</div>
+								<div class="product-quickview__optgramms header"><span>123</span> g </div>
+							</div>
+							<div class="product-quickview__squ product-quickview__opt">
+								<div class="product-quickview__optname slim-text">Squirrels</div>
+								<div class="product-quickview__optdots">..........................................................................................................................</div>
+								<div class="product-quickview__optgramms header"><span></span> g </div>
+							</div>
+							<div class="product-quickview__fat product-quickview__opt">
+								<div class="product-quickview__optname slim-text">fats</div>
+								<div class="product-quickview__optdots">..........................................................................................................................</div>
+								<div class="product-quickview__optgramms header"><span></span> g </div>
+							</div>
+						</div>
+						<div class="product-quickview__butttons">
+							<div class="product-quickview__counter counter">
+								<div class="counter__inner">
+									<div class="counter__number"> <span>1</span> </div>
+									<div class="counter__buttons">
+										<div class="counter__up">
+											<div></div>
+										</div>
+										<div class="counter__down">
+											<div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-quickview__button button"  data-min-dur="100" data-max-dur="700" onclick="addToCardQ(event)">add to card <span><span></span></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-quickview__close close">
+				<div class="close__angle"></div>
+				<div class="close__area">
+					<div class="close__hitbox" onclick="hideQuickView()">
+						<div class="close__simbol">
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

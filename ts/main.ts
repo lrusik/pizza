@@ -1,5 +1,5 @@
 //=include ../node_modules/slick-carousel/slick/slick.js
-//=include ../node_modules/smoothscroll/smoothscroll.js
+//=include smoothscroll.js
 
 //=include lib/lib.ts
 //=include menu.ts
