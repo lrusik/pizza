@@ -158,7 +158,7 @@ function quickView(event) {
 }
 
 function removeTab(event) {
-	$(event.currentTarget.parentElement.parentElement).remove();
+	$(event.currentTarget.parentElement.parentElement.parentElement).remove();
 	calculateTotal();
 }	
 
