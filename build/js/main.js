@@ -2310,6 +2310,7 @@
     // return smoothscroll API
     return smoothScroll;
 });
+//=include lib/lib.ts
 var pizzas = [
     {
         name: "New York‑style pizza",
